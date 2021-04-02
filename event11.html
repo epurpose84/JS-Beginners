@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            #box{
+                height: 700px;
+                width: 1300px;
+                border: solid;
+                
+            }
+            #imgbox{
+                height: 400px;
+                width: 1000px;
+                margin: auto;
+                border: solid;
+            }
+            #im{
+                margin:30px;
+            }
+        </style>
+        <script>
+            function thisImage(imagedemo)
+            {
+                var imagename = imagedemo.src;
+                document.getElementById("replaceimage").src=imagename;
+            }
+        </script>
+    </head>
+<body>
+
+
+<div id="box">
+<div id="imgbox">
+    <img src="img/download.jpg" id="replaceimage" width="1000px" height="400px" alt="">
+</div>
+<div>
+    <img onclick="thisImage(this)" src="img/1.png" id="im" height="250px" width="250px" alt="">
+    <img onclick="thisImage(this)" src="img/2.jpg" id="im" height="250px" width="250px" alt="">
+    <img onclick="thisImage(this)" src="img/3.jpg" id="im" height="250px" width="250px" alt="">
+    <img onclick="thisImage(this)" src="img/4.jpeg" id="im" height="250px" width="250px" alt="">
+</div>
+</div>
+
+</body>
+</html>

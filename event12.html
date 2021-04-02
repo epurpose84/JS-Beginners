@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script>
+            function show()
+            {
+                var pss = document.getElementById("pss");
+                if(pss.type==="password")
+                    pss.type="text";
+                else
+                    pss.type="password";
+            }
+        </script>
+    </head>
+<body>
+
+<input type="password" id="pss">
+<input type="checkbox" onclick="show()">Show Password
+
+</body>
+</html>

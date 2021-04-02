@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        
+        function item() {
+            var color = document.getElementById("color");
+            var item = color.value;
+
+            var wallpaper = document.getElementById("wallpaper");
+            wallpaper.style.backgroundColor=item;
+
+        }
+
+    </script>
+</head>
+<body id="wallpaper" onchange="item()">
+ <select name="color" id="color">
+     <option value="">Color</option>
+     <option value="red">Red</option>
+     <option value="yellow">yellow</option>
+     <option value="green">green</option>
+ </select>
+    
+    
+</body>
+</html>

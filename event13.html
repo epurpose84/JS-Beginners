@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script>
+            function zoomin()
+            {
+                var myImage=document.getElementById("myImage");
+                myImage.height = myImage.height+20;
+                myImage.width = myImage.width+20;
+            }
+        function zoomout()
+        {
+            var myImage=document.getElementById("myImage");
+                myImage.height = myImage.height-20;
+                myImage.width = myImage.width-20;
+
+        }
+        </script>
+    </head>
+<body>
+<img src="img/6.jpg" id="myImage" height="300" width="300">
+<br>
+<button onclick="zoomin()">zoom in</button>
+<button onclick="zoomout()">zoom out</button>
+
+</body>
+</html>

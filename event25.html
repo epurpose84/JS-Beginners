@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title></title>
+    <script>
+
+        function showDate() {
+            document.getElementById('show1').innerHTML=Date();
+        }
+    </script>
+</head>
+
+<body>
+   <button onclick="document.getElementById('show').innerHTML=Date()">GetDate</button>
+   <button onclick="showDate()">GetDate</button>
+   <button onclick="this.innerHTML=Date()">GetDate</button>
+
+   <p id="show"></p>
+   <p id="show1"></p>
+
+</body>
+
+</html>

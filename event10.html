@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            #box{
+                height: 200px;
+                width: 600px;
+                border: solid;
+            }
+        </style>
+        <script>
+            function applycolor()
+            {
+                var item = document.getElementById("item");
+                var color = item.value;
+
+                var box = document.getElementById("box");
+                box.style.backgroundColor=color;
+            }
+        </script>
+    </head>
+<body>
+
+
+<div id="box"></div>
+<br>
+<select onchange="applycolor()" name="item" id="item">
+    <option value="">select color</option>
+    <option value="green">Green</option>
+    <option value="yellow">Yellow</option>
+</select>
+
+</body>
+</html>

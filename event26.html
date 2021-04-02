@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title></title>
+    <script>
+        var total1,total2,total3;
+        function totalChecked() {
+
+            var ti11 = document.getElementById('ti11').checked;
+            var ti12 = document.getElementById('ti12').checked;
+            var ti13 = document.getElementById('ti13').checked;
+            var display1 = document.getElementById('total1');
+            total1 = 0;
+            if (ti11 == false && ti12 == false && ti13 == false) {
+                display1.innerHTML = 0;
+            }
+            else {
+                if (ti11 == true) {
+
+                    total1 += 1;
+                    display1.innerHTML = total1;
+                }
+                if (ti12 == true) {
+
+                    total1 += 1;
+                    display1.innerHTML = total1;
+                }
+                if (ti13 == true) {
+
+                    total1 += 1;
+                    display1.innerHTML = total1;
+                }
+            }
+
+        }
+
+        function totalChecked2() {
+
+            var ti21 = document.getElementById('ti21').checked;
+            var ti22 = document.getElementById('ti22').checked;
+            var ti23 = document.getElementById('ti23').checked;
+            var display2 = document.getElementById('total2');
+            total2 = 0;
+            if (ti21 == false && ti22 == false && ti23 == false) {
+                display2.innerHTML = 0;
+            }
+            else {
+                if (ti21 == true) {
+
+                    total2 += 1;
+                    display2.innerHTML = total2;
+                }
+                if (ti22 == true) {
+
+                    total2 += 1;
+                    display2.innerHTML = total2;
+                }
+                if (ti23 == true) {
+
+                    total2 += 1;
+                    display2.innerHTML = total2;
+                }
+            }
+
+        }
+
+        function totalChecked3() {
+
+            var ti31 = document.getElementById('ti31').checked;
+            var ti32 = document.getElementById('ti32').checked;
+            var ti33 = document.getElementById('ti33').checked;
+            var display3 = document.getElementById('total3');
+            total3 = 0;
+            if (ti31 == false && ti32 == false && ti33 == false) {
+                display3.innerHTML = 0;
+            }
+            else {
+                if (ti31 == true) {
+
+                    total3 += 1;
+                    display3.innerHTML = total3;
+                }
+                if (ti32 == true) {
+
+                    total3 += 1;
+                    display3.innerHTML = total3;
+                }
+                if (ti33 == true) {
+                    total3 += 1;
+                    display3.innerHTML = total3;
+                }
+            }
+
+        }
+
+        function subTotal() {
+//            var sum1 = document.getElementById('total1').value;
+  //          var sum2 = document.getElementById('total2').value;
+    //        var sum3 = document.getElementById('total3').value;
+            var res = total1 + total2 + total3;
+            var display = document.getElementById('netTotal');
+            display.innerHTML=res;
+        }
+
+    </script>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Table 1</legend>
+        Item T11 <input type="checkbox" id="ti11" onclick="totalChecked()"><br>
+        Item T12 <input type="checkbox" id="ti12" onclick="totalChecked()"><br>
+        Item T13 <input type="checkbox" id="ti13" onclick="totalChecked()"><br>
+    </fieldset>
+    <fieldset>
+        <legend>Table 2</legend>
+        Item T21 <input type="checkbox" id="ti21" onclick="totalChecked2()"><br>
+        Item T22 <input type="checkbox" id="ti22" onclick="totalChecked2()"><br>
+        Item T23 <input type="checkbox" id="ti23" onclick="totalChecked2()"><br>
+    </fieldset>
+    <fieldset>
+        <legend>Table 3</legend>
+        Item T31 <input type="checkbox" id="ti31" onclick="totalChecked3()"><br>
+        Item T32 <input type="checkbox" id="ti32" onclick="totalChecked3()"><br>
+        Item T33 <input type="checkbox" id="ti33" onclick="totalChecked3()"><br>
+    </fieldset>
+    <fieldset>
+        <legend>Get Result</legend>
+        <span>Table1 :</span>
+        <span id="total1" on></span><br>
+        <span>Table2 :</span>
+        <span id="total2"></span><br>
+        <span>Table3 :</span>
+        <span id="total3"></span><br>
+        <Button onclick="subTotal()">Net Total</Button>
+        <span id="netTotal"></span>
+    </fieldset>
+</body>
+
+</html>

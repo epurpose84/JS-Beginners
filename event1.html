@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Events</title>
+        <script>
+            function up()
+            {
+                alert("key up");
+            }
+            function down()
+            {
+                alert("key down");
+            }
+            function press()
+            {
+                alert("key press");
+            }
+
+        </script>
+    </head>
+    <body>
+        <input type="text" onkeyup="up()" placeholder="Key up"><br>
+        <input type="text" onkeydown="down()" placeholder="Key down"><br>
+        <input type="text" onkeypress="press()" placeholder="Key press"><br>
+    </body>
+</html>

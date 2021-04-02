@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title></title>
+    <script>
+
+        function sum() {
+
+            var first = parseInt(document.getElementById('q1').value);
+            var second = parseInt(document.getElementById("p1").value);
+            var ans = first*second;
+            document.getElementById("r1").value=ans;
+
+            var third = parseInt(document.getElementById('q2').value);
+            var fourth = parseInt(document.getElementById("p2").value);
+            var ans2 = third*fourth;
+            document.getElementById("r2").value=ans2;
+        }
+
+    </script>
+</head>
+
+<body>
+    <table border="1" align="center" cellpadding="15">
+        <center>Item Management</center>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Soap</td>
+                <td> <input type="text" id="q1"> </td>
+                <td> <input type="text" onkeyup="sum()" id="p1"> </td>
+                <td> <input type="text"  id="r1"> </td>
+            </tr>
+            <tr>
+                <td>Detergent</td>
+                <td> <input type="text" id="q2"> </td>
+                <td> <input type="text" onkeyup="sum()" id="p2"> </td>
+                <td> <input type="text" id="r2"> </td>
+            </tr>
+            <tr>
+                <td>Match Box</td>
+                <td> <input type="text"> </td>
+                <td> <input type="text"> </td>
+                <td> <input type="text"> </td>
+            </tr>
+            <tr>
+                <td>Sanitizer</td>
+                <td> <input type="text"> </td>
+                <td> <input type="text"> </td>
+                <td> <input type="text"> </td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table><br><br>
+ <!--   <center>
+        <input class="btn btn-primary" type="button" onclick="sum()" value="SubTotal">
+    </center>
+    -->
+</body>
+
+</html>

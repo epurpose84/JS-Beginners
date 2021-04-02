@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
+      <script>
+        function totalItem(){
+                  
+        var item1 = document.getElementById('item1').checked;
+
+        var item2 = document.getElementById('item2').checked;
+        var item3 = document.getElementById('item3').checked;
+        var item4 = document.getElementById('item4').checked;
+        var display = document.getElementById("total");
+        var total=0;
+        if(item1==false && item2==false && item3==false && item4==false){
+          display.innerHTML=0;
+        }
+        else{
+          if(item1==true)
+          {
+            total+=1;
+            display.innerHTML=total;
+          }  
+
+          if(item2==true)
+          {
+            total+=1;
+        
+            display.innerHTML=total;
+          }  
+          if(item3==true)
+          {
+            total+=1;
+            display.innerHTML=total;
+          }  
+          if(item4==true)
+          {
+            total+=1;
+            display.innerHTML=total;
+          }  
+
+        }
+      }
+       </script>
+    </head>
+<body>
+
+<span class="material-icons">shopping_cart</span> <sup id="total"></sup>
+
+<br>
+<input id="item1" type="checkbox" onclick="totalItem()">Item1<br>
+<input id="item2" type="checkbox" onclick="totalItem()">Item2<br>
+<input id="item3" type="checkbox" onclick="totalItem()">Item3<br>
+<input id="item4" type="checkbox" onclick="totalItem()">Item4<br>
+
+</body>
+</html>

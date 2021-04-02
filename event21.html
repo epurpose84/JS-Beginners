@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/82b1d3cdf4.js" crossorigin="anonymous"></script>
+        <title></title>
+<style>
+    #hid2{
+        display:none;
+    }
+</style>
+<script>
+            function show()
+            {
+                var pss = document.getElementById("pss");
+                var hid1 = document.getElementById("hid1");
+                var hid2 = document.getElementById("hid2");
+                if(pss.type==="password")
+                {
+                    pss.type="text";
+                    hid1.style.display="none";
+                    hid2.style.display="inline-block";
+                }
+                else
+                {
+                    pss.type="password";
+                    hid2.style.display="none";
+                    hid1.style.display="inline-block";
+                }    
+            }
+        </script>
+    </head>
+<body>
+
+<input type="password" id="pss">
+    <i onclick="show()" id="hid1" class="fa fa-eye"></i>
+    <i onclick="show()" id="hid2" class="fas fa-eye-slash"></i>
+</body>
+</html>

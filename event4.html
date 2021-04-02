@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Events</title>
+        <script>
+           function myFun()
+           {
+                var txt = document.getElementById("txt");
+                txt.style.textTransform="uppercase";
+                txt.style.fontFamily="cursive";
+                txt.style.backgroundColor="red";
+                txt.style.color="white";
+                txt.style.width="500px";
+                txt.style.height="50px";
+           }
+
+        </script>
+    </head>
+    <body>
+       <!-- <input id="txt" type="text" placeholder="Enter text" onfocus="myFun()"> -->
+   <!--    <br> <input id="txt" type="text" placeholder="Enter text" onfocusin="myFun()">-->
+<!--      <br> <input id="txt" type="text" placeholder="Enter text" onfocusout="myFun()">-->
+<input id="txt" type="text" placeholder="Enter text" onblur="myFun()">
+
+    </body>
+</html>

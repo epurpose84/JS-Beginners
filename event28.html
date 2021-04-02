@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title></title>
+    <style>
+        #box{
+            border: solid;
+            margin: auto;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+    <script>
+        var size=0;
+        function changeRadius(){
+            size+=5;
+       
+         var round = document.getElementById('box');
+         round.style.borderRadius=size+'px';
+
+    }
+    </script>
+</head>
+<body>
+    
+    <div id="box"></div>
+    <button id="radiusSize" onclick="changeRadius()">Change Radius</button>
+    
+</body>
+</html>

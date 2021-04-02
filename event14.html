@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script>
+            function show()
+            {
+                var res1 =  document.getElementById("item1").checked;
+                var res2 =  document.getElementById("item2").checked;
+                var res3 =  document.getElementById("item3").checked;
+
+                var res = "";
+                if(res1==true)
+                {
+                    res+="Juice\n";
+                }
+                if(res2==true)
+                {
+                    res+="IceCream\n";
+                }
+                if(res3==true)
+                {
+                    res+="Chocolate\n";
+                }
+                alert("You selected : \n"+res);
+                document.getElementById("demo").innerHTML="You selected : <br>"+res;
+            }
+            </script>
+    </head>
+<body>
+<input type="checkbox" id="item1" value="Juice">Juice<br>
+<input type="checkbox" id="item2" value="IceCream">Icecream<br>
+<input type="checkbox" id="item3" value="Chocolate">Chocolate<br>
+
+<button onclick="show()"> Selected Items </button>
+<p id="demo"></p>
+</body>
+</html>
